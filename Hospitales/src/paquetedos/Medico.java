@@ -18,19 +18,23 @@ public class Medico {
         especialidad = e;
         sueldo = s;
     }
-    
-    private void establecerNombre(String n) {
-        nom = n;
+
+    public String obtenerNombre() {
+        return nom;
     }
+
+    public void establecerNombre(String nom) {
+        this.nom = nom;
+    }
+    
     public void establecerEspecialidad(String e) {
         especialidad = e;
     }
+    
     public void establecerSueldo(double s) {
         sueldo = s;
     }
-    private String obtenerNombre() {
-        return nom;
-    }
+    
     public String obtenerEspecialidad() {
         return especialidad;
     }

@@ -18,19 +18,22 @@ public class Enfermero {
         tipo = e;
         sueldoM = s;
     }
-    
-    private void establecerNombre(String n) {
-        nom = n;
+
+    public String obtenerNombre() {
+        return nom;
     }
+
+    public void establecerNombre(String nom) {
+        this.nom = nom;
+    }
+    
     public void establecerEspecialidad(String t) {
         tipo = t;
     }
     public void establecerSueldo(double s) {
         sueldoM = s;
     }
-    private String obtenerNombre() {
-        return nom;
-    }
+    
     public String obtenerEspecialidad() {
         return tipo;
     }
